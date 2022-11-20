@@ -1,0 +1,52 @@
+body {
+	display: flex;
+	flex-direction: column;
+	width: 750px;
+	margin: 0 auto;
+	font-family: Helvetica, Tahoma, sans-serif;
+	color: navy;
+}
+
+h1 {
+	text-align: center;
+}
+
+input {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 4px;
+}
+
+input:focus {
+	outline: none;
+}
+
+table {
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: navy;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	border: 1px solid navy;
+}
+
+tbody td {
+	padding: 4px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: AliceBlue;
+}		
+
+tfoot {
+	background-color: LightBlue;
+	font-style: italic;
+	text-align: center;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<title>Filter table using JavaScript</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Daniel Pereira Guimarães">
+	<link rel="stylesheet" href="filter_table.css">
+	<script src="filter_table.js"></script>
+	<script>
+		function filterInputKeyUp() {
+			const table = document.getElementById("myTable");
+			const filterInput = document.getElementById("filterInput");
+			filterTable(table, filterInput.value);
+		}
+	</script>
+</head>
+<body>
+	<h1>Filter table using JavaScript</h1>
+	<input id="filterInput" type="text" placeholder="Filter..." onkeyup="filterInputKeyUp()">
+	<table id="myTable">
+		<thead>
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>Telephone</td>
+				<td>E-mail</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>123</td>
+				<td>Jhon</td>
+				<td>1234-4567</td>
+				<td>jhon@server.com</td>
+			</tr>
+			<tr>
+				<td>456</td>
+				<td>Emma</td>
+				<td>4567-8963</td>
+				<td>emma@server.com</td>
+			</tr>
+			<tr>
+				<td>789</td>
+				<td>Oliver</td>
+				<td>1122-3344</td>
+				<td>oliver@otherserver.com</td>
+			</tr>
+			<tr>
+				<td>147</td>
+				<td>Sophia</td>
+				<td>2233-4455</td>
+				<td>sophia@server.com</td>
+			</tr>
+			<tr>
+				<td>159</td>
+				<td>George</td>
+				<td>3344-5566</td>
+				<td>george@otherserver.com</td>
+			</tr>
+			<tr>
+				<td>369</td>
+				<td>James</td>
+				<td>4455-6677</td>
+				<td>james@server.com</td>
+			</tr>
+			<tr>
+				<td>321</td>
+				<td>Amelia</td>
+				<td>5566-7788</td>
+				<td>amelia@server.com</td>
+			</tr>
+			<tr>
+				<td>654</td>
+				<td>Willian</td>
+				<td>6677-8899</td>
+				<td>willian@otherserver.com</td>
+			</tr>
+			<tr>
+				<td>987</td>
+				<td>Olivia</td>
+				<td>7412-5896</td>
+				<td>olivia@server.com</td>
+			</tr>
+
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">By Daniel Pereira Guimarães</td>
+			</tr>
+		</tfoot>
+	</table>
+
+</body>
+</html>
