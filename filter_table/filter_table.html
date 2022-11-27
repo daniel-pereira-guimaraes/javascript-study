@@ -11,7 +11,7 @@
 		function filterInputKeyUp() {
 			const table = document.getElementById("myTable");
 			const filterInput = document.getElementById("filterInput");
-			filterTable(table, filterInput.value);
+			ScheduleSingleTask(200, "filterMyTable", () => filterTable(table, filterInput.value));
 		}
 	</script>
 </head>
